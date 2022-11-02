@@ -1,2 +1,4 @@
-# MasterDissertation
-Short Term Load Forecasting using ConvLSTM with selected AutoRegressive features
+CLSAF, a ConvLSTM model working with Persistence model with dynamic feature selection using Power Cepstrum to select autoregressive features, the model was compared to CLSAF using Autocorrelation Function, usual ConvLSTM and usual Persistence model. The tests were done comparing different theta threshold, input lags, resolutions, and input length. The result show that Power Cepstrum can be used as a replacement for Autocorrelation Function, CLSAF have comparable accuracy to ConvLSTM model and better runtime performance when using y-1 as input lag, for 30 minutes resolution is possible to observe great difference between runtime prediction without losing accuracy performance, Power Cepstrum showed better runtime prediction when compared to autocorrelation function, also, higher input length improved models performance. 
+
+Related work: https://www.sciencedirect.com/science/article/abs/pii/S0306261921000672
+
